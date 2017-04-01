@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_list"
+        class="xyz.fnplus.echo.ui.DeviceListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="164dp">
+
+        <!-- Preview: layout=@layout/row_devices -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/frag_detail"
+        class="xyz.fnplus.echo.ui.DeviceDetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.95">
+
+        <!-- Preview: layout=@layout/device_detail -->
+    </fragment>
+
+    <Button
+        android:id="@+id/btn_switch"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/group_chat" />
+
+</LinearLayout>
