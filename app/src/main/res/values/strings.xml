@@ -23,4 +23,6 @@
     <string name="label_cancel">Cancel</string>
     <string name="label_ssid">Ssid</string>
     <string name="group_chat">Group Chat</string>
+
+    <string name="choose_device_name">Choose your device name"</string>
 </resources>
