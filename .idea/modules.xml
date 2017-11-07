@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Echo.iml" filepath="$PROJECT_DIR$/Echo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/echo-native.iml" filepath="$PROJECT_DIR$/echo-native.iml" />
     </modules>
   </component>
 </project>

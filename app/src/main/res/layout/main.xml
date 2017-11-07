@@ -2,32 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <fragment
-        android:id="@+id/frag_list"
-        class="xyz.fnplus.echo.ui.DeviceListFragment"
-        android:layout_width="match_parent"
-        android:layout_height="164dp">
+  <fragment
+      class="xyz.fnplus.echo.ui.DeviceListFragment"
+      android:id="@+id/frag_list"
+      android:layout_width="match_parent"
+      android:layout_height="164dp"
+      android:layout_weight="0.25"
+      >
 
-        <!-- Preview: layout=@layout/row_devices -->
-    </fragment>
+    <!-- Preview: layout=@layout/row_devices -->
+  </fragment>
 
-    <fragment
-        android:id="@+id/frag_detail"
-        class="xyz.fnplus.echo.ui.DeviceDetailFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.95">
+  <fragment
+      class="xyz.fnplus.echo.ui.DeviceDetailFragment"
+      android:id="@+id/frag_detail"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.55"
+      >
 
-        <!-- Preview: layout=@layout/device_detail -->
-    </fragment>
+    <!-- Preview: layout=@layout/device_detail -->
+  </fragment>
 
-    <Button
-        android:id="@+id/btn_switch"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/group_chat" />
+  <Button
+      android:id="@+id/btn_switch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/group_chat"
+      style="?android:attr/buttonStyleSmall"
+      />
 
 </LinearLayout>

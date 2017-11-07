@@ -5,40 +5,46 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     card_view:cardCornerRadius="2dp"
-    card_view:contentPadding="4dp">
+    card_view:contentPadding="4dp"
+    >
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="?android:attr/listPreferredItemHeight"
+      android:background="?android:attr/activatedBackgroundIndicator"
+      >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="2dip"
+        android:layout_marginEnd="2dip"
+        android:src="@drawable/machine"
+        />
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="?android:attr/listPreferredItemHeight"
-        android:background="?android:attr/activatedBackgroundIndicator">
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
 
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="2dip"
-            android:src="@drawable/machine" />
+      <TextView
+          android:id="@+id/peer_name"
+          android:layout_width="fill_parent"
+          android:layout_height="0dip"
+          android:layout_weight="1"
+          android:gravity="center_vertical"
+          />
 
-        <LinearLayout
-            android:layout_width="0dip"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/peer_name"
-                android:layout_width="fill_parent"
-                android:layout_height="0dip"
-                android:layout_weight="1"
-                android:gravity="center_vertical" />
-
-            <TextView
-                android:id="@+id/peer_MAC"
-                android:layout_width="fill_parent"
-                android:layout_height="0dip"
-                android:layout_weight="1"
-                android:ellipsize="marquee"
-                android:maxLines="1" />
-        </LinearLayout>
+      <TextView
+          android:id="@+id/peer_MAC"
+          android:layout_width="fill_parent"
+          android:layout_height="0dip"
+          android:layout_weight="1"
+          android:singleLine="true"
+          />
     </LinearLayout>
+  </LinearLayout>
 </android.support.v7.widget.CardView>

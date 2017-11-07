@@ -2,28 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+  <LinearLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      >
+
+    <fragment
+        class="xyz.fnplus.echo.ui.DeviceListFragment"
+        android:id="@+id/frag_list"
+        android:layout_width="@dimen/phone_list_height"
+        android:layout_height="match_parent"
+        >
+      <!-- Preview: layout=@layout/row_devices -->
+    </fragment>
+
+    <fragment
+        class="xyz.fnplus.echo.ui.DeviceDetailFragment"
+        android:id="@+id/frag_detail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <fragment
-            android:id="@+id/frag_list"
-            class="xyz.fnplus.echo.ui.DeviceListFragment"
-            android:layout_width="@dimen/phone_list_height"
-            android:layout_height="match_parent">
-            <!-- Preview: layout=@layout/row_devices -->
-        </fragment>
-
-        <fragment
-            android:id="@+id/frag_detail"
-            class="xyz.fnplus.echo.ui.DeviceDetailFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <!-- Preview: layout=@layout/device_detail -->
-        </fragment>
-    </LinearLayout>
+        >
+      <!-- Preview: layout=@layout/device_detail -->
+    </fragment>
+  </LinearLayout>
 </LinearLayout>

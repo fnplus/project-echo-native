@@ -5,24 +5,27 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_marginTop="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <EditText
-        android:id="@+id/deviceNameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="6dp"
-        android:layout_marginRight="6dp"
-        android:hint="Device name" />
+  <EditText
+      android:id="@+id/deviceNameEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="6dp"
+      android:layout_marginRight="6dp"
+      android:hint="Device name"
+      />
 
-    <Button
-        android:id="@+id/confirmButton"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginTop="4dp"
-        android:text="Confirm" />
+  <Button
+      android:id="@+id/confirmButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      android:layout_marginLeft="6dp"
+      android:layout_marginRight="6dp"
+      android:layout_marginTop="4dp"
+      android:text="Confirm"
+      style="?android:attr/buttonStyleSmall"
+      />
 </LinearLayout>

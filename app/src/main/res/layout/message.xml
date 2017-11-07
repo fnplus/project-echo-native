@@ -6,36 +6,41 @@
     android:layout_gravity="bottom"
     android:layout_margin="8dp"
     app:cardCornerRadius="2dp"
-    app:contentPadding="4dp">
+    app:contentPadding="4dp"
+    >
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical"
+      >
 
-        <TextView
-            android:id="@+id/message_view"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.00"
-            android:scrollbars="vertical"
-            android:text="" />
+    <TextView
+        android:id="@+id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        android:scrollbars="vertical"
+        android:text=""
+        />
 
-        <EditText
-            android:id="@+id/edit_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textAutoCorrect"
-            android:text="">
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoCorrect"
+        android:text=""
+        >
 
-            <requestFocus />
-        </EditText>
+      <requestFocus/>
+    </EditText>
 
-        <Button
-            android:id="@+id/btn_send"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Send" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        />
+  </LinearLayout>
 </android.support.v7.widget.CardView>
